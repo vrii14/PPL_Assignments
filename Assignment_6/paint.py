@@ -14,27 +14,24 @@ class main:
 
         self.pen_button = Button(self.master, text='Pen', command=self.use_pen)
         self.pen_button.grid(row=0, column=0)
-
-        self.brush_button = Button(self.master, text='Brush', command=self.use_brush)
-        self.brush_button.grid(row=0, column=1)
-
+        
         self.color_button = Button(self.master, text='Color Picker', command=self.choose_color)
-        self.color_button.grid(row=0, column=2)
+        self.color_button.grid(row=0, column=1)
 
         self.eraser_button = Button(self.master, text='Eraser', command=self.use_eraser)
-        self.eraser_button.grid(row=0, column=3)
+        self.eraser_button.grid(row=0, column=2)
 
         self.delete_button = Button(self.master, text='Clear Canvas', command=self.clear_all)
-        self.delete_button.grid(row=0, column=4)
+        self.delete_button.grid(row=0, column=3)
 
         self.save_button = Button(self.master, text='Save File', command=self.save)
-        self.save_button.grid(row=0, column=5)
+        self.save_button.grid(row=0, column=4)
 
         self.choose_size_button = Scale(self.master, from_=1, to=10, orient=HORIZONTAL)
-        self.choose_size_button.grid(row=0, column=6)
+        self.choose_size_button.grid(row=0, column=5)
 
         self.c = Canvas(self.master, bg='white', width=600, height=600)
-        self.c.grid(row=1, columnspan=7)
+        self.c.grid(row=1, columnspan=6)
 
         self.setup()
 
@@ -52,9 +49,6 @@ class main:
 
     def use_pen(self):
         self.activate_button(self.pen_button)
-
-    def use_brush(self):
-        self.activate_button(self.brush_button)
 
     def clear_all(self):
         self.c.delete(ALL)
