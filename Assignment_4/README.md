@@ -9,3 +9,4 @@ objects can be formed. Its basically derived from ABC class and for specifying a
 from the assignment include the area, perimeter and draw methods in shapes.
 4. Building a hierachy in the classes using parent class and child classes and continuing doing so. Like
 Shape -> Polygon -> Triangle -> Equilateral Triangle.
+5. Modularity :- It means making multiple modules first and then linking them to form a complete system. It minimises the duplication. I used modularity by importing all classes of animals and shapes into one file and creatted objects and called methods in this file.
