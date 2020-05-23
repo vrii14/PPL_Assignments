@@ -6,7 +6,6 @@
     4. Triangle and Rectangle are derived classes of Polygon
     5. Square is derived class of Rectangle
     6. Equilateral Triangle is derived class of Triangle
-    At the end all the methods are called by creating objects of respecting classes.
 
     Also the draw methods will run one after another. So each can be demonstrated by commenting others.
 '''
@@ -227,47 +226,3 @@ class Square(Rectangle):
             square.right(90)
 
         turtle.resetscreen()
-
-
-if __name__ == '__main__':
-    my_line = Line(20)
-    my_line.side()
-    my_line.perimeter()
-    my_line.area()
-    my_line.draw()
-
-    my_triangle = Triangle(10, 20, 30)
-    my_triangle.side()
-    my_triangle.perimeter()
-    my_triangle.area()
-    my_triangle.draw()
-
-    my_rectangle = Rectangle()
-    my_rectangle.side()
-    my_rectangle.perimeter()
-    my_rectangle.area()
-    my_rectangle.draw()
-
-    my_ellipse = Ellipse(10, 20)
-    my_ellipse.side()
-    my_ellipse.perimeter()
-    my_ellipse.area()
-    my_ellipse.draw()
-
-    my_eqtr = Equilateraltriangle(12)
-    my_eqtr.side()
-    my_eqtr.perimeter()
-    my_eqtr.area()
-    my_eqtr.draw()
-
-    my_square = Square(15)
-    my_square.side()
-    my_square.perimeter()
-    my_square.area()
-    my_square.draw()
-
-    my_circle = Circle(10)
-    my_circle.side()
-    my_circle.perimeter()
-    my_circle.area()
-    my_circle.draw()
