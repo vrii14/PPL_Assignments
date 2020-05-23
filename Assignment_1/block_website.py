@@ -8,5 +8,5 @@ website_list = file1.read()
 if a in website_list:
 	pass
 else:
-	file1.write(ip+" "+ a)
+	file1.write(ip+"      "+ a + "\n")
 	print("website blocked successfully")
