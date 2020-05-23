@@ -1,8 +1,6 @@
-pages = [2, 4, 5, 6, 12, 16, 17, 21, 20]
-pages.sort()
-#print (pages)
-for i in range(1,26):
-    if(i not in pages):
-        print(f"{i} is missing page number.")
-
-
+p = input("Enter the page numbers present in the book\n")
+p = set(p.split(","))
+p = {int(n) for n in p}
+check = set(range(1,25))
+print("Missing page numbers are:- \n")
+print(check - p)
