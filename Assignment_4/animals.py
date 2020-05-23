@@ -6,7 +6,6 @@
     3. Deer and Cow are derived classes of Herbivore class.
     4. Cat and Lion are derived classes of Carnivore class.
     5. Bear and Human are derived classes of Omnivore class.
-    At the end all the methods are called by creating objects of respecting classes.
 '''
 
 from abc import ABC,abstractmethod
@@ -178,45 +177,4 @@ class Human(Omnivore):
 	def speak(self):
 		print("I talk a lot and can speak everything!")
 
-
-
-if __name__ == '__main__':
-	
-	my_deer = Deer("Bucky", 29)
-	my_deer.name()
-	my_deer.age()
-	my_deer.eat()
-	my_deer.speak()
-
-	my_cow = Cow("Emma", 36)
-	my_cow.name()
-	my_cow.age()
-	my_cow.eat()
-	my_cow.speak()
-
-
-	my_cat = Cat("Misty", 20)
-	my_cat.name()
-	my_cat.age()
-	my_cat.eat()
-	my_cat.speak()
-
-	my_lion = Lion("Simba", 38)
-	my_lion.name()
-	my_lion.age()
-	my_lion.eat()
-	my_lion.speak()
-
-
-	my_bear = Bear("Fuzzy", 45)
-	my_bear.name()
-	my_bear.age()
-	my_bear.eat()
-	my_bear.speak()
-
-	my_human = Human("Shyam", 30)
-	my_human.name()
-	my_human.age()
-	my_human.eat()
-	my_human.speak()
 
