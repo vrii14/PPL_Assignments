@@ -49,15 +49,20 @@ int main() {
 		return 1; 
 	} 
 	
-	while (i < 3) { 
-		error = pthread_create(&(arr[i]), NULL, &clockthread, NULL); 
-		if (error != 0) 
-			printf("\nThread can't be created :[%s]", 
-				strerror(error)); 
-		i++; 
-	} 
+	
+	while(1){
+		counter = 1;
+		for(i = 0;i < 3; i++) { 
+			error = pthread_create(&(arr[i]), NULL, &clockthread, NULL); 
+			if (error != 0) 
+				printf("\nThread can't be created :[%s]", 
+			strerror(error)); 
+		}
+		sleep(1);
+	}
 
-        pthread_join(arr[0], NULL); 
+
+	pthread_join(arr[0], NULL); 
 	pthread_join(arr[1], NULL); 
 	pthread_join(arr[2], NULL); 
 	
