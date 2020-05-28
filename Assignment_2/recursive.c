@@ -11,7 +11,7 @@ int fact(int i) {
 }
 
 int main() {
-        int n = 5, f;
-        f = fact(5);
+        int n = 4, f;
+        f = fact(n);
         return 0;
 }
